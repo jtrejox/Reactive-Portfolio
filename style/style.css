@@ -1,0 +1,100 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*NAVIGATION BAR AND TITLE=========================================*/
+nav {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    padding: 1% 0 1% 0;
+    display: flex;
+    background-color: #445877;
+    color: #445877;
+}
+
+.main-nav {
+    
+    font-size: 1.5vw;
+    text-align: right;
+    margin: 1% 2% 0 0;
+    flex: 55%;
+}
+
+.main-nav a{
+    color: #92ccce;
+    text-decoration: underline;
+    margin-left: 2%;
+}
+
+.nav-title {
+    flex: 35%;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-title h1 {
+    font-weight: 600;
+    padding: 0.3vw 0 0.3vw 4vw;
+    display: inline;
+    text-align: right;
+    font-size: 3vw;
+    background-color: #92ccce;
+}
+
+/* MAIN BANNER AND HEADER=================================================== */
+header{
+    margin-bottom: 2vw;
+    display: flex;
+    background-image: url(../Assets/back.png);
+    height: 14vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+img{
+    width: 100%;
+}
+
+.banner-text{
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+.banner-text h2{
+    font-weight: 600;
+    padding: 0.2vw 0.2vw 0.2vw 0.2vw;
+    background-color: #92ccce;
+    color: #1c1d21;
+    font-size: 2.5vw;
+    
+}
+
+/* ABOUT ME SECCTION====================================================== */
+
+.about-me{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about-me-title{
+    font-weight: 750;
+    font-size: 4vw;
+    margin-left: 16vw;
+}
+
+.about-me-title h3{
+    text-align: right;
+    color: #445877;
+    margin-right: 1vw;
+}
+
+.about-me-paragraph{
+    border-left: 0.3vw solid #31343d;
+    color: #445877;
+    padding-left: 1vw;
+    font-size: 1.3vw;
+}
+
+.about-me-paragraph p{
+    line-height: 1.2;
+}
+
