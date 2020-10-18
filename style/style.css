@@ -251,8 +251,28 @@ h4{
     flex-direction: column;
 }
 .projects div{
+    background-size: cover;
+    opacity: 1;
+    margin: 0vw 1vw;
     width: 65vw;
-    height: 10vw;
+    height: 15vw;
+}
+.project-title, .refactor-title{
+    display: inline;
+    justify-content: end;
+    align-items: center;
+    width: 2vw;
 }
 
+.project-title h4, .refactor-title h4 {
+    margin-top: 6vw;
+    background-color: cadetblue;
+    width: 10vw;
+
+}
+.project-title p, .refactor-title p {
+    background-color: cadetblue;
+    width: 10vw;
+
+}
 }
