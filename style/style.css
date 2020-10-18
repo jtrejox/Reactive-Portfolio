@@ -248,7 +248,12 @@ h4{
 /* MEDIA QUERIES=========================================== */
 @media screen and (max-width: 768px){
 .projects {
+    height: 100%;
     flex-direction: column;
+}
+
+.projects a{
+    text-decoration: none;
 }
 .projects div{
     background-position: center;
@@ -259,7 +264,6 @@ h4{
     height: 15vw;
 }
 .project-title, .refactor-title{
-    text-decoration: none;
     line-height: 1.5;
     display: inline;
     justify-content: end;
@@ -268,14 +272,53 @@ h4{
 }
 
 .project-title h4, .refactor-title h4 {
-    margin-top: 6vw;
-    background-color: #92ccce;
-    width: 10vw;
+   visibility: hidden;
 
 }
-.project-title p, .refactor-title p {
+.project-title::after, .refactor-title::after {
+    text-align: center;
+}
+
+.refactor::after{
     background-color: #92ccce;
-    width: 10vw;
+    margin-left: 13vw;
+    font-size: 5vw;
+    color: #1c1d21;
+    content: "Horiseon Refactor";
+}
+.pw_generator::after{ 
+    background-color:#ff0000;
+    margin-left: 8vw;
+    font-size: 4vw;
+    color: #1c1d21;
+    content: "Random Pasword Generator";
+}
+
+.timed_js_quiz::after{
+    background-color: #0000ff;
+    margin-left: 15vw;
+    font-size: 5vw;
+    color: #1c1d21;
+    content: "Javascript Quiz";
+}
+.server::after{
+    background-color: #008000;
+    margin-left: 15vw;
+    font-size: 5vw;
+    color: #1c1d21;
+    content: "Server Queries";
+}
+
+.reactive_portfolio::after{
+    background-color: #ffff00;
+    margin-left: 13vw;
+    font-size: 5vw;
+    color: #1c1d21;
+    content: "Reactive Portfolio";
+}
+
+.project-title p, .refactor-title p {
+   visibility: hidden;
 
 }
 }
