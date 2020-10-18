@@ -21,7 +21,8 @@ nav {
 }
 
 .main-nav {
-    font-size: 1.5vw;
+    font-weight: 550;
+    font-size: 1.75vw;
     text-align: right;
     margin: 1% 2% 0 0;
     flex: 55%;
@@ -34,7 +35,7 @@ nav {
 }
 .main-nav a:hover{
     padding: 0.3vw 0vw 3vw 0vw;
-    background-color: #610a07;
+    background-color: #684c28;
 }
 
 .nav-title {
@@ -242,4 +243,16 @@ h4{
     color: #1c1d21;
     text-decoration: none;
   
+}
+
+/* MEDIA QUERIES=========================================== */
+@media screen and (max-width: 768px){
+.projects {
+    flex-direction: column;
+}
+.projects div{
+    width: 65vw;
+    height: 10vw;
+}
+
 }
