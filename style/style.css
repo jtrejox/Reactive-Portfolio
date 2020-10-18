@@ -1,18 +1,26 @@
+/* GENERAL ATTRIBUTES======================================================== */
 *{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
-/*NAVIGATION BAR AND TITLE=========================================*/
+h3{
+    text-align: right;
+    color: #445877;
+    margin-right: 1vw;
+}
+
+
+
+/*NAVIGATION BAR AND TITLE ATTRIBUTES=========================================*/
 nav {
-    /* font-family: Arial, Helvetica, sans-serif; */
     padding: 1% 0 1% 0;
     display: flex;
-    background-color: #445877;
-    color: #445877;
+    background-image: url(../Assets/woodgrain2.jpg);
+    background-size: cover;
+    color: #eeeef7;
 }
 
 .main-nav {
-    
     font-size: 1.5vw;
     text-align: right;
     margin: 1% 2% 0 0;
@@ -20,13 +28,17 @@ nav {
 }
 
 .main-nav a{
-    color: #92ccce;
+    color: #eeeef7;
     text-decoration: underline;
     margin-left: 2%;
 }
+.main-nav a:hover{
+    padding: 0.3vw 0vw 3vw 0vw;
+    background-color: #610a07;
+}
 
 .nav-title {
-    flex: 35%;
+    height: 4vw;
     justify-content: start;
     align-items: center;
 }
@@ -37,21 +49,17 @@ nav {
     display: inline;
     text-align: right;
     font-size: 3vw;
-    background-color: #92ccce;
 }
 
-/* MAIN BANNER AND HEADER=================================================== */
+/* MAIN BANNER AND HEADER ATTRIBUTES=================================================== */
 header{
     margin-bottom: 2vw;
     display: flex;
-    background-image: url(../Assets/back.png);
+    background-image: url(../Assets/rainbow.webp);
+    background-size: cover;
     height: 14vw;
     justify-content: flex-end;
     align-items: flex-end;
-}
-
-img{
-    width: 100%;
 }
 
 .banner-text{
@@ -59,42 +67,179 @@ img{
     margin-bottom: 1%;
 }
 .banner-text h2{
-    font-weight: 600;
-    padding: 0.2vw 0.2vw 0.2vw 0.2vw;
-    background-color: #92ccce;
+    font-weight: 800;
+    padding: 0.5vw;
     color: #1c1d21;
-    font-size: 2.5vw;
+    font-size: 3.3vw;
     
 }
 
-/* ABOUT ME SECCTION====================================================== */
-
-.about-me{
+/* ARTICLE TITLES ATTRIBUTES====================================================== */
+.about-me-title, .work-title{
+    font-weight: 750;
+    font-size: 4vw;
+    margin-left: 12vw;
+    margin-right: 1vw;
+}
+/* CONTAINER ATTRIBUTES=============================================================== */
+.about-me, .work, footer {
+    height: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 2vw;
 }
 
-.about-me-title{
-    font-weight: 750;
-    font-size: 4vw;
-    margin-left: 16vw;
-}
-
-.about-me-title h3{
-    text-align: right;
-    color: #445877;
-    margin-right: 1vw;
-}
-
+/* ABOUT ME SECCTION ATTRIBUTES====================================================== */
 .about-me-paragraph{
+    line-height: 1.2;
     border-left: 0.3vw solid #31343d;
     color: #445877;
     padding-left: 1vw;
     font-size: 1.3vw;
 }
 
-.about-me-paragraph p{
-    line-height: 1.2;
+.about-me-title{
+    padding: 3vw 1.8vw 3vw 1.8vw;
+    background-color: blue;
 }
 
+.about-me-title h3{
+    color: #eeeef7
+    ;
+}
+
+/* WORK SECCTION ATTRIBUTES=============================================== */
+
+/* Work Title====================================== */
+.work p{
+    font-weight: 100;
+    font-size: 1vw;
+}
+
+.work-title{
+    padding: 5vw 1.8vw 5vw 3vw;
+    background-color: red;
+    margin-left: 12.4vw
+}
+.work-title h3{
+    color: #1c1d21;
+}
+
+/* Outer Box======================================= */
+.projects{
+    flex-wrap: wrap;
+    padding-right: 1.3vw;
+    border-left: 0.3vw solid #31343d;
+    display: flex;
+    justify-content: space-between;
+}
+        
+/*4 Smaller Boxes=====================================  */
+.projects div{
+    margin-bottom: 1vw;
+    
+}
+
+h4{
+    font-weight: 600;
+}
+
+.refactor, .pw_generator, .server {
+    margin-left: 1.1vw;
+}
+
+
+.refactor{  
+    opacity: .7;
+    border: 0.5vw solid #92ccce;
+    background-image: url(../Assets/digital-marketing-meeting1.jpg);
+    background-size: cover;
+    height: 26vw;
+    width: 67vw;
+}
+
+.refactor-title{
+    margin-top: 23vw;
+    font-size: 1.5vw;
+    display: inline-block;
+    background-color: #92ccce;
+    color: #1c1d21;    
+}
+
+.pw_generator, .timed_js_quiz, .server, .reactive_portfolio{
+    opacity: .7;
+    height: 15vw;
+    width: 32.5vw;
+    background-size: cover;
+}
+
+.project-title{
+    margin-top: 11vw;
+    font-size: 1.5vw;
+    display: inline-block;
+    background-color: #92ccce;
+    color: #1c1d21; 
+}
+
+.projects div:hover{
+    opacity: 1;
+}
+
+.pw_generator{
+    border: 0.5vw solid red;
+    background-image: url(../Assets/Random.jpg);
+   
+}
+
+.timed_js_quiz{ 
+    border: 0.5vw solid blue;
+    background-position: center;
+    background-image: url(../Assets/Clock.jpg);
+}
+
+.server{ 
+    border: 0.5vw solid green;
+    background-image: url(../Assets/server.jpg);
+    
+}
+
+.reactive_portfolio{
+    border: 0.5vw solid yellow;
+    background-image: url(../Assets/portfolio.jpg);
+}
+
+/* FOOTER============================================================== */
+.contact_me_title{
+    background-color: purple;
+    padding: 1vw 0vw 1vw 1.2vw; 
+    font-weight: 750;
+    font-size: 4vw;
+    margin-left: 11vw;
+    margin-right: 1vw;
+}
+.contact_me_title h3{
+    color: #eeeef7;
+}
+
+.contacts{
+    border-left: 0.3vw solid #31343d;
+    height: 10vw;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
+
+.contacts li{
+    border-bottom: #31343d solid .4vw;
+    margin-left: 12vw;
+    display: inline;
+}
+.contacts ul{
+  margin-top: 4vw;
+}
+
+.contacts a{
+    color: #1c1d21;
+    text-decoration: none;
+  
+}
