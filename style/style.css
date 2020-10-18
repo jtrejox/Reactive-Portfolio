@@ -251,6 +251,7 @@ h4{
     flex-direction: column;
 }
 .projects div{
+    background-position: center;
     background-size: cover;
     opacity: 1;
     margin: 0vw 1vw;
@@ -258,6 +259,8 @@ h4{
     height: 15vw;
 }
 .project-title, .refactor-title{
+    text-decoration: none;
+    line-height: 1.5;
     display: inline;
     justify-content: end;
     align-items: center;
@@ -266,12 +269,12 @@ h4{
 
 .project-title h4, .refactor-title h4 {
     margin-top: 6vw;
-    background-color: cadetblue;
+    background-color: #92ccce;
     width: 10vw;
 
 }
 .project-title p, .refactor-title p {
-    background-color: cadetblue;
+    background-color: #92ccce;
     width: 10vw;
 
 }
